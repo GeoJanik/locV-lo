@@ -1,0 +1,320 @@
+/* CSS LOC VELO */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+    font-family: 'Courgette', cursive;
+    /* width: 100%;  */
+
+}
+
+/* SECTION NAV */
+.navSite {
+    display: flex;
+    background-color: #F49619;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+.navSite>p {
+    margin-right: 10px;
+}
+
+#logoNav {
+    height: 174px;
+    padding-top: 78px;
+    padding-left: 31px;
+}
+/* FIN SECTION NAV */
+
+/* SECTION SLIDER */
+#sectionSlider {
+    margin-top: 2%;
+}
+
+#slider {
+    width: 1000px;
+    margin: auto;
+}
+
+#slider>img {
+    width: 100%;
+    height: auto;
+}
+
+#previous,
+#next {
+    cursor: pointer;
+    top: 183px;
+    font-size: 58px;
+    color: #004C6C;
+    padding: 10px;
+}
+
+.far:hover {
+    color: #3399cc;
+}
+
+#next {
+    right: 0;
+}
+
+#slider:hover #previous,
+#slider:hover #next {
+    opacity: 1;
+}
+
+#break,
+#play {
+    cursor: pointer;
+    font-size: 30px;
+    color: #004C6C;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+/* FIN SECTION SLIDER */
+
+/* SECTION MAP ET STATION*/
+#map {
+    width: 90%;
+    height: 550px;
+    border-radius: 7px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#detailStation>h2 {
+    margin-bottom: 0;
+}
+
+#detailStation {
+    text-align: center;
+    width: 390px;
+    height: 550px;
+    background-color: #FFFFFF;
+    display: none;
+    box-shadow: 2px 2px 22px 1px #aaa;
+    border-radius: 7px;
+}
+
+#stationName,
+#stationAddress {
+    margin: 0;
+    color: #3399cc;
+}
+
+#lastName,
+#firstName {
+    background-color: #EDEDED;
+    border-radius: 4px;
+    height: 23px;
+    font-size: 14px;
+}
+
+#infosReservation {
+    display: none;
+    opacity: 0;
+}
+
+#mapResa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+#reserver {
+    border-radius: 4px;
+    background-color: #F49619;
+    color: white;
+    width: 92%;
+    height: 30px;
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+#reserver:hover {
+    background-color: #3399cc;
+}
+
+#canvas {
+    background-color: #ededed;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#canvasBox {
+    display: none;
+}
+
+#boardRecap {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 9px 0px #F49619;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+
+#buttons-set-canvas {
+    display: flex;
+    justify-content: space-around
+}
+
+#button-canvas {
+    display: none;
+    border-radius: 4px;
+    background-color: #F49619;
+    color: white;
+    width: 45%;
+    height: 23px;
+    font-size: 16px;
+}
+
+#button-canvas:hover {
+    background-color: #3399cc;
+}
+
+#retry {
+    border-radius: 4px;
+    background-color: #F49619;
+    color: white;
+    height: 23px;
+    width: 45%;
+    font-size: 16px;
+}
+
+#retry:hover {
+    background-color: #3399cc;
+}
+
+.mycluster {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #E5E38D;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+/* FIN SECTION MAP ET STATION*/
+
+/* SECTION DIV RECAP ET FOOTER */
+#boardRecap {
+    display: none;
+    text-align: center;
+}
+
+#ancre {
+    height: 100px;
+}
+
+#ancre>p {
+    text-align: center;
+}
+
+#clearResa {
+    border-radius: 4px;
+    background-color: #F49619;
+    color: white;
+    width: 20%;
+    height: 30px;
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+#clearResa:hover {
+    background-color: #3399cc;
+}
+/* FIN SECTION DIV RECAP ET FOOTER */
+
+
+/* MEDIA QUERIES  */
+@media all and (max-width: 1589px) {
+    #map {
+        margin-bottom: 30px;
+    }
+
+    #detailStation {
+        width: 600px;
+    }
+}
+
+@media all and (max-width: 1589px) {
+    #clearResa {
+        height: 47px;
+    }
+}
+
+@media all and (max-width: 1333px) {
+    #slider {
+        margin-top: 10%;
+    }
+
+    #logoNav {
+        height: 173px;
+        padding-top: 75px;
+        padding-left: 20px;
+    }
+}
+
+@media all and (max-width: 1033px) {
+
+    #slider {
+        width: 90%;
+    }
+
+    #logoNav {
+        height: 174px;
+        padding-top: 78px;
+        padding-left: 21px;
+    }
+}
+
+@media all and (max-width: 950px) {
+    #clearResa {
+        width: 57%;
+    }
+}
+
+@media all and (max-width: 690px) {
+    #logoNav {
+        height: 119px;
+        padding-top: 55px;
+        padding-left: 40px;
+    }
+
+    #detailStation {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media all and (max-width: 390px) {
+    #logoNav {
+        height: 90px;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+
+    #button-canvas {
+        font-size: 14px;
+    }
+
+    #map {
+        height: 416px;
+    }
+}

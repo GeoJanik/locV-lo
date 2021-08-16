@@ -1,0 +1,6 @@
+[0813/191136.657:ERROR:settings.cc(320)] Settings magic is not 1129342067
+[1113/150728.707:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
+[0102/102124.926:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
+[0115/115348.018:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
+[0116/115348.026:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Geo\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\c05cb840-b1f6-4ae5-8947-7ae59e512966: Le chemin d’accès spécifié est introuvable. (0x3)
+[0116/115348.026:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)

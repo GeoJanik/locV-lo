@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location de vélo</title>
+  <!-- Link du FontAwesome pour icone slider -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <!-- Police d'écriture via google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+  <!-- Link du fichier CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Link des cluster du marker -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+</head>
+
+<body>
+
+  <!-- SECTION ENTETE -->
+  <nav>
+    <div class="navSite">
+      <img id="logoNav" src="./assets/img/logoNav.png" alt="logo">
+    </div>
+  </nav>
+  <!-- FIN SECION ENTETE -->
+
+  <!-- SECTION SLIDER -->
+  <div id="sectionSlider">
+    <div id="slider">
+      <img id="imgSlider" alt="slider" src="./assets/img/velo.png" />
+    </div>
+    <div class="timer">
+      <div id="previous"><i class="far fa-arrow-alt-circle-left"></i> </div>
+      <div id="play"><i class="far  fa-play-circle"></i></div>
+      <div id="break"><i class="far fa-pause-circle"></i></div>
+      <div id="next"><i class="far fa-arrow-alt-circle-right"></i></div>
+    </div>
+  </div>
+  <!-- FIN SECTION SLIDER -->
+
+  <!-- SECTION MAP ET DETAIL DE LA SATION + CANVAS -->
+  <div id="mapResa">
+    <div id="map"></div>
+    <div id="detailStation">
+      <h2>Détails de la station</h2>
+      <p id="stationName"></p>
+      <p id="stationAddress"></p>
+      <p id="statut"></p>
+      <p id="availableBikes"></p>
+      <form id="infosReservation" onsubmit="return false;">
+        <input id="lastName" type="text" placeholder="Votre nom" name="Nom" required>
+        <input id="firstName" placeholder="Votre prenom" autofocus="" required><br>
+        <button id="reserver">RESERVER</button>
+      </form>
+
+      <!-- Canvas -->
+      <div id="canvasBox">
+        <h2>Signature</h2>
+        <canvas id="canvas"></canvas>
+
+        <!--Button Canvas -->
+        <div id="buttons-set-canvas">
+          <button id="button-canvas">Valider la reservation</button>
+          <button type="submit" id="retry">Recommencer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIN SECTION MAP ET DETAIL DE LA SATION + CANVAS  -->
+
+  <!-- SECTION TABLEAU DE RECAP RESERVATION  -->
+  <div>
+    <div id="boardRecap">
+      <div id="recapResa"></div>
+      <button id="clearResa">ANNULER RESERVATION</button>
+    </div>
+  </div>
+  <!-- FIN SECTION TABLEAU DE RECAP RESERVATION  -->
+
+  <!-- SCRIPT JS  -->
+  <script src="./assets/js/slider.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="./assets/js/map.js"></script>
+  <script src="./assets/js/form.js"></script>
+  <script src="./assets/js/resa.js"></script>
+  <script src="./assets/js/canvas.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"
+    integrity="sha512-MQlyPV+ol2lp4KodaU/Xmrn+txc1TP15pOBF/2Sfre7MRsA/pB4Vy58bEqe9u7a7DczMLtU5wT8n7OblJepKbg=="
+    crossorigin="anonymous"></script>
+  <!-- FIN SCRIPT JS -->
+
+</body>
+
+</html>
